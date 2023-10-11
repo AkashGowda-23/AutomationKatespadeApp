@@ -38,14 +38,16 @@ public class SearchStore extends BaseTest {
 		
 	}
 	
-	public void butt() {
+	public void butt() throws InterruptedException {
+		Thread.sleep(5000);
 		button.click();
 	}
 	
-	public void validate() {
+	public void validate() throws InterruptedException {
+		Thread.sleep(5000);
 		String s=Msg.getText();
 		System.out.println(s);
-		Assert.assertEquals(s,"World Trade Center");
+		Assert.assertEquals(s,"World Trade Centerr");
 		
 	}
 	

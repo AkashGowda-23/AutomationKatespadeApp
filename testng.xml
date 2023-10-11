@@ -1,13 +1,19 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="API Test Suite">
- <listeners>
-        <listener class-name="TestCases.Listners" />
-    </listeners>
-     <test name="SignupTest">
-        <classes>
-            <class name="TestCases.LoginTest" />
-        </classes>
-    </test>
-    
-    
+	<listeners>
+		<listener class-name="TestCases.Listners" />
+	</listeners>
+	<test name="UI Automation">
+		<classes>
+			<class name="TestCases.AddProductToCartTest" />
+			<class name="TestCases.AddProductToWishListTest" />
+			<class name="TestCases.LoginWithBlankPasswordTest" />
+			<class name="TestCases.LoginWithInvalidPassword" />
+			<class name="TestCases.SearchProductTest" />
+			<class name="TestCases.SearchStoreTest" />
+			<class name="TestCases.SingUpTest" />
+			<class name="TestCases.ValideLoginTest" />
+			<class name="TestCases.OfferEmailSignupTest" />
+		</classes>
+	</test>
 </suite>

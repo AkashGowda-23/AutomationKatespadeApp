@@ -35,6 +35,10 @@ public class Singup extends BaseTest {
 
 	@FindBy(xpath = "//button[@class='btn btn-primary btn-block g-recaptcha js-verify-account-modal-open']")
 	private WebElement SubmitButton;
+	
+	@FindBy(xpath = "//div[@class='recaptcha-checkbox-border']")
+	private WebElement captcha;
+	
 
 	public void accountButton() {
 		WebDriverWait wait = new WebDriverWait(driver, 100);
@@ -72,8 +76,16 @@ public class Singup extends BaseTest {
 		Phoneno.sendKeys(s);
 
 	}
+	
+	public void cap() throws InterruptedException {
+		driver.switchTo().frame(driver.findElement(By.xpath("//iframe[@title='reCAPTCHA']")));
+         Thread.sleep(5000);
+         captcha.click();
+         driver.switchTo().defaultContent();
+	}
 
-	public void Submit() {
+	public void Submit() throws InterruptedException {
+		Thread.sleep(5000);
 		SubmitButton.click();
 
 	}

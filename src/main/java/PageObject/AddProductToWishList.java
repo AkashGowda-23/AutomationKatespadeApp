@@ -10,35 +10,34 @@ import org.testng.Assert;
 
 import Utils.BaseTest;
 
-public class AddProductToCart extends BaseTest {
+public class AddProductToWishList extends BaseTest {
 
-	public AddProductToCart() {
+	public AddProductToWishList() {
 		PageFactory.initElements(super.driver, this);
 	}
-
-
+	
 	@FindBy(xpath = "//div[@class='chakra-input__group css-49u29p']//input[@id='SearchInput']")
 	private WebElement Searchtbutton;
-
+	
 	@FindBy(xpath = "//div[@data-qa='cm_icon_search']/child::*[1]")
 	private WebElement search;
 	
+
 	@FindBy(xpath = "//img[@alt='Heart Of Gold Idiom Bangle']")
 	private WebElement clickonprod;
 	
-	@FindBy(xpath = "//button[@id='add-to-cart']")
-	private WebElement Addtocart;
 	
-	@FindBy(xpath = "//button[normalize-space()='View shopping bag']")
-	private WebElement viewcart;
 	
-	@FindBy(xpath = "//a[@data-qa='sb_link_pdtname']")
-	private WebElement gettext;
+	
+	@FindBy(xpath = "//button[@aria-label='wishlist'] ")
+	private WebElement wishbutton;
 
-   
- 
+	@FindBy(xpath = "//a[@data-qa='d_hdr_icon_sfl']")
+	private WebElement wishlistbutton;
 	
-
+	@FindBy(xpath = "//a[@data-qa='cm_pdt_link_pt_title'] ")
+	private WebElement validatemsg;
+	
 	public void search(String s) {
 		Searchtbutton.sendKeys(s);
 
@@ -57,27 +56,27 @@ public class AddProductToCart extends BaseTest {
 		
 		clickonprod.click();
 	}
-	
-	public void add() throws InterruptedException {
-		Thread.sleep(7000);
-		Addtocart.click();
+	public void addtoWish() throws InterruptedException  {
 		
+		Thread.sleep(5000);
+		
+		wishbutton.click();
 	}
 	
-	public void view() throws InterruptedException {
+	public void clickWishButton() throws InterruptedException {
 		Thread.sleep(5000);
-		viewcart.click();
-		
+		 wishlistbutton.click();
 	}
 	
-	public void validatetheproduct () throws InterruptedException {
+	public void validateWishListItem() throws InterruptedException {
 		Thread.sleep(5000);
-		String s =gettext.getText();
+		String s = validatemsg.getText();
 		System.out.println(s);
 		Assert.assertEquals(s, "Heart Of Gold Idiom Bangle");
-
 	}
+	 
+	
+	
 
-
-
+	
 }

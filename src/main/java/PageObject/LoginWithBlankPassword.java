@@ -67,7 +67,7 @@ public class LoginWithBlankPassword extends BaseTest {
 		Submit.click();
 
 	}
-	public void Validate() {
+	public void validatePassword() {
 		
 		String s = Reqmsg.getText();
 		System.out.println(s);

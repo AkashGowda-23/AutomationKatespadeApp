@@ -4,14 +4,22 @@
   <listeners>
     <listener class-name="TestCases.Listners"/>
   </listeners>
-  <test thread-count="5" name="SignupTest(failed)">
+  <test thread-count="5" name="UI Automation(failed)">
     <classes>
-      <class name="TestCases.LoginTest">
+      <class name="TestCases.SearchStoreTest">
+        <methods>
+          <include name="store"/>
+          <include name="initialize"/>
+          <include name="exit"/>
+        </methods>
+      </class> <!-- TestCases.SearchStoreTest -->
+      <class name="TestCases.LoginWithInvalidPassword">
         <methods>
           <include name="Login1"/>
+          <include name="exit"/>
           <include name="initialize"/>
         </methods>
-      </class> <!-- TestCases.LoginTest -->
+      </class> <!-- TestCases.LoginWithInvalidPassword -->
     </classes>
-  </test> <!-- SignupTest(failed) -->
+  </test> <!-- UI Automation(failed) -->
 </suite> <!-- Failed suite [API Test Suite] -->
