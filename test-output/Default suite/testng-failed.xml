@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestCases.OfferEmailSignupTest">
+      <class name="TestCases.CustomerServiceTest">
         <methods>
           <include name="initialize"/>
-          <include name="EmailSignup"/>
-          <include name="ReEmailSignup"/>
           <include name="exit"/>
+          <include name="customerCareReEmailNotMatchTest" invocation-numbers="0"/>
+          <include name="customerCareTest" invocation-numbers="0"/>
         </methods>
-      </class> <!-- TestCases.OfferEmailSignupTest -->
+      </class> <!-- TestCases.CustomerServiceTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

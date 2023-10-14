@@ -6,20 +6,34 @@
   </listeners>
   <test thread-count="5" name="UI Automation(failed)">
     <classes>
-      <class name="TestCases.SearchStoreTest">
+      <class name="TestCases.CustomerServiceTest">
         <methods>
-          <include name="store"/>
           <include name="initialize"/>
           <include name="exit"/>
+          <include name="customerCareReEmailNotMatchTest" invocation-numbers="0"/>
+          <include name="customerCareTest" invocation-numbers="0"/>
         </methods>
-      </class> <!-- TestCases.SearchStoreTest -->
+      </class> <!-- TestCases.CustomerServiceTest -->
       <class name="TestCases.LoginWithInvalidPassword">
         <methods>
-          <include name="Login1"/>
+          <include name="loginWithInvalidCredentials"/>
           <include name="exit"/>
           <include name="initialize"/>
         </methods>
       </class> <!-- TestCases.LoginWithInvalidPassword -->
+      <class name="TestCases.SearchStoreTest">
+        <methods>
+          <include name="searchStore" invocation-numbers="0"/>
+          <include name="initialize"/>
+          <include name="exit"/>
+        </methods>
+      </class> <!-- TestCases.SearchStoreTest -->
+      <class name="TestCases.OrderStatusTest">
+        <methods>
+          <include name="initialize"/>
+          <include name="invalidOrderStatus"/>
+        </methods>
+      </class> <!-- TestCases.OrderStatusTest -->
     </classes>
   </test> <!-- UI Automation(failed) -->
 </suite> <!-- Failed suite [API Test Suite] -->

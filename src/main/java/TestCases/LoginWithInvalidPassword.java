@@ -20,7 +20,7 @@ public class LoginWithInvalidPassword extends BaseTest {
 	
 		
 		@Test
-		public void Login1() {
+		public void loginWithInvalidCredentials() {
 			
 			LoginWithBlankPassword p = new LoginWithBlankPassword();
 			p.accBuuton();

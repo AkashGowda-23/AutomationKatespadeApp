@@ -21,7 +21,7 @@ public class OfferEmailSignupTest  extends BaseTest {
 	 @Test
 	 public void EmailSignup() throws InterruptedException {
 		 OfferEmailSignup p = new  OfferEmailSignup();
-		 p.enterMail("7259811012@gmail.com");
+		 p.enterMail("725981101233@gmail.com");
 		 p.submit();
 		
 		 

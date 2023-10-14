@@ -38,6 +38,10 @@ public class LoginWithBlankPassword extends BaseTest {
 	@FindBy(xpath = "//p[@class='alert-message coachtopia-alert-message']")
 	private WebElement Reqmsgforinvalidpassword;
 	
+	@FindBy(xpath = "//div[@class='text-input floating-label-wrap form-group required mb-4']//div[@id='form-email-error']")
+	private WebElement blankemailmsg;
+	
+	
 	
 
 	public void accBuuton() {
@@ -81,6 +85,13 @@ public class LoginWithBlankPassword extends BaseTest {
 		String s = Reqmsgforinvalidpassword.getText();
 		System.out.println(s);
 		
+		
+	}
+	
+	public void validateBlankEmail() {
+		String s = blankemailmsg.getText();
+		SoftAssert se = new SoftAssert();
+		se.assertEquals(s, "Email address is required.");
 		
 	}
 

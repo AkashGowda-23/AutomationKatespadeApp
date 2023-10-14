@@ -20,7 +20,7 @@ public class ValideLoginTest  extends BaseTest{
 	} 
 	
 	@Test
-	public void Login1() {
+	public void validLogin() {
 		
 		Login p = new Login();
 		p.accBuuton();

@@ -9,11 +9,13 @@
 			<class name="TestCases.AddProductToWishListTest" />
 			<class name="TestCases.LoginWithBlankPasswordTest" />
 			<class name="TestCases.LoginWithInvalidPassword" />
+			<class name="TestCases.CustomerServiceTest" />
 			<class name="TestCases.SearchProductTest" />
 			<class name="TestCases.SearchStoreTest" />
 			<class name="TestCases.SingUpTest" />
 			<class name="TestCases.ValideLoginTest" />
 			<class name="TestCases.OfferEmailSignupTest" />
+			<class name="TestCases.OrderStatusTest" />
 		</classes>
 	</test>
 </suite>

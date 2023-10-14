@@ -47,7 +47,7 @@ public class SearchStore extends BaseTest {
 		Thread.sleep(5000);
 		String s=Msg.getText();
 		System.out.println(s);
-		Assert.assertEquals(s,"World Trade Centerr");
+		Assert.assertEquals(s,"World Trade Center");
 		
 	}
 	
