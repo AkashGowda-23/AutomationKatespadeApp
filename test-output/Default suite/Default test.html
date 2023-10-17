@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>5/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Oct 14 18:01:01 IST 2023</td>
+<td>Started on:</td><td>Mon Oct 16 21:38:21 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>43 seconds (43652 ms)</td>
+<tr><td>Total time:</td><td>193 seconds (193214 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,15 +75,30 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='CucumberOption.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOption.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User can sign up with valid information", "Sign Up"</td>
+<td title='TestCases.SingUpTest.signupWithoutPassword()'><b>signupWithoutPassword</b><br>Test class: TestCases.SingUpTest<br>Parameters: Alice, alice, alice@example.com, , 9876543210</td>
 <td></td>
-<td>27</td>
-<td>CucumberOption.TestRunner@5d534f5d</td></tr>
+<td>20</td>
+<td>TestCases.SingUpTest@53ce1329</td></tr>
 <tr>
-<td title='CucumberOption.TestRunner.runScenario()'><b>runScenario</b><br>Test class: CucumberOption.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User searches for a product", "Search for a Product"</td>
+<td title='TestCases.SingUpTest.signUpWithUserData()'><b>signUpWithUserData</b><br>Test class: TestCases.SingUpTest<br>Parameters: John, Doe, john.doe@example.com, password123, 1234567890</td>
 <td></td>
-<td>14</td>
-<td>CucumberOption.TestRunner@5d534f5d</td></tr>
+<td>22</td>
+<td>TestCases.SingUpTest@53ce1329</td></tr>
+<tr>
+<td title='TestCases.SingUpTest.signupWithoutLastname()'><b>signupWithoutLastname</b><br>Test class: TestCases.SingUpTest<br>Parameters: Alice, , alice@example.com, pass123, 9876543210</td>
+<td></td>
+<td>19</td>
+<td>TestCases.SingUpTest@53ce1329</td></tr>
+<tr>
+<td title='TestCases.SingUpTest.signupWithoutFirstname()'><b>signupWithoutFirstname</b><br>Test class: TestCases.SingUpTest<br>Parameters: , Alice, alice@example.com, pass123, 9876543210</td>
+<td></td>
+<td>18</td>
+<td>TestCases.SingUpTest@53ce1329</td></tr>
+<tr>
+<td title='TestCases.SingUpTest.signupWithoutEmail()'><b>signupWithoutEmail</b><br>Test class: TestCases.SingUpTest<br>Parameters: Alice, alice, , pass123, 9876543210</td>
+<td></td>
+<td>19</td>
+<td>TestCases.SingUpTest@53ce1329</td></tr>
 </table><p>
 </body>
 </html>

@@ -35,9 +35,6 @@ public class AddProductToCart extends BaseTest {
 	@FindBy(xpath = "//a[@data-qa='sb_link_pdtname']")
 	private WebElement gettext;
 
-   
- 
-	
 
 	public void search(String s) {
 		Searchtbutton.sendKeys(s);

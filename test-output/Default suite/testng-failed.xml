@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestCases.CustomerServiceTest">
+      <class name="CucumberOption.TestRunner">
         <methods>
-          <include name="initialize"/>
-          <include name="exit"/>
-          <include name="customerCareReEmailNotMatchTest" invocation-numbers="0"/>
-          <include name="customerCareTest" invocation-numbers="0"/>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
         </methods>
-      </class> <!-- TestCases.CustomerServiceTest -->
+      </class> <!-- CucumberOption.TestRunner -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -26,9 +26,6 @@ public class AddProductToWishList extends BaseTest {
 	@FindBy(xpath = "//img[@alt='Heart Of Gold Idiom Bangle']")
 	private WebElement clickonprod;
 	
-	
-	
-	
 	@FindBy(xpath = "//button[@aria-label='wishlist'] ")
 	private WebElement wishbutton;
 
